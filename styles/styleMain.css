@@ -1,3 +1,5 @@
+/*
+
 :root {
     --rose-hulman-red: #800000;
 }
@@ -24,7 +26,7 @@ button {
     border-style: none;
 }
 
-/* Different Colors of buttons*/
+
 #blue-btn{
     background-color: blue;
     margin-left: 2px;
@@ -74,7 +76,7 @@ button {
     margin-bottom: 15px;
 }
 
-/* Different Box Colors*/
+
 .blueBox {
     background-color: blue;
 }
@@ -87,3 +89,4 @@ button {
 .purpleBox{
     background-color: purple;
 }
+    */

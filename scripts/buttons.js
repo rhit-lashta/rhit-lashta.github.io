@@ -1,3 +1,5 @@
+
+/*
 let favCount = document.getElementById("favorite_number");
 
 let plusBtn = document.getElementById("plus-btn");
@@ -62,5 +64,5 @@ function setBoxColor(color) {
     
 
 }
-
+*/
 
