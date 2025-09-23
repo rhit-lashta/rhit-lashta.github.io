@@ -1,1 +1,0 @@
-# rhit-lashta.github.io
