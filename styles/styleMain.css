@@ -15,11 +15,9 @@ mark {
 }
 
 .navBar {
-    size: 42px;
-    display: block;
-    width: 33%;
-    box-sizing: border-box;
-    background-color: black;
+    background: red;
+    font-size: 3em;
+    Color: white;
 }
 
 /*
