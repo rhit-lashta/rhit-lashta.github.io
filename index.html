@@ -5,6 +5,15 @@
 
         <link rel="stylesheet" href="./styles/styleMain.css">
         <script src="./scripts/buttons.js" defer></script>
+
+        <script>
+            fetch("navTop.html")
+              .then(response = response.text())
+              .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+              });
+        </script>
+
 	</head>
 <body>
 
@@ -20,16 +29,10 @@
     <iframe src="navTop.html" width="100%" height="500px"></iframe>
 
     <p>
-    <div id="navbar"></div>
+    <div id="navbar">ssss</div>
     </p>
 
-    <script>
-        fetch("navTop.html")
-          .then(response = response.text())
-          .then(data => {
-            document.getElementById("navbar").innerHTML = data;
-          });
-    </script>
+    
 
 </body>
 </html>
