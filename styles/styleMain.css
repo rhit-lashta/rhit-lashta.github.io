@@ -1,8 +1,24 @@
+
+.specialization {
+    background-color: #dddddd;
+    color: black;
+    width: 30%;
+    float: left;
+}
+
+a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
 /*
 
 :root {
     --rose-hulman-red: #800000;
 }
+
+
 
 body{
     color: black;
