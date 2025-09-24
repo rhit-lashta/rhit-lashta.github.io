@@ -7,14 +7,19 @@
 }
 
 a {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: black;
+    
 }
 
 mark {
     color: yellowgreen;
+}
+
+.navBar {
+    size: 42px;
+    display: block;
+    width: 33%;
+    box-sizing: border-box;
+    background-color: black;
 }
 
 /*
