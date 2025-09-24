@@ -21,9 +21,14 @@ mark {
 }
 
 .navBar {
-    background: red;
+    text-align: center;
+
+    Color: black;
+    background-color: rgb(180, 230, 255);
+
+    display: block;
+    padding: 10px;
     font-size: 3em;
-    Color: white;
 }
 
 /*
