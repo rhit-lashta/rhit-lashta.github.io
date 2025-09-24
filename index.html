@@ -19,5 +19,17 @@
 
     <iframe src="navTop.html" width="100%" height="500px"></iframe>
 
+    <p>
+    <div id="navbar"></div>
+    </p>
+
+    <script>
+        fetch("navTop.html")
+          .then(response = response.text())
+          .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+          });
+    </script>
+
 </body>
 </html>
