@@ -3,7 +3,6 @@ body{
 }
 
 
-
 a { 
     color: blue;
     text-decoration: none;
@@ -21,6 +20,8 @@ a:hover {
 mark {
     color: yellowgreen;
 }
+
+/* Heading Help - https://stackoverflow.com/questions/48535332/how-to-make-it-so-my-form-stays-under-my-header-unless-i-need-to-scroll */
 
 .navBar {
 
