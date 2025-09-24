@@ -1,20 +1,19 @@
 
-.specialization {
-    background-color: #dddddd;
-    color: black;
-    width: 30%;
-    float: left;
-}
+
 
 a { 
     color: blue;
     text-decoration: none;
 }
 
-
 a:hover {
     color: white;
 }
+
+#navbar {
+    margin-left: 0px;
+}
+
 
 mark {
     color: yellowgreen;
@@ -22,10 +21,11 @@ mark {
 
 .navBar {
     text-align: center;
+    justify-content: space-evenly;
+    word-spacing: 0.5em;
 
     Color: black;
     background-color: rgb(180, 230, 255);
-    justify-content: space-evenly;
     width: 100%;
 
     display: block;
