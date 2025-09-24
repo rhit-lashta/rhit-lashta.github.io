@@ -13,6 +13,10 @@ a {
     background-color: black;
 }
 
+mark {
+    color: yellowgreen;
+}
+
 /*
 
 :root {
