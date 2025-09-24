@@ -2,4 +2,6 @@
 
 fetch("navTop.html")
     .then(response => response.text())
-    .then(data => {document.getElementById("navbarTop").innerHTML = data;});
+    .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+});
