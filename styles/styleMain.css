@@ -40,7 +40,7 @@ mark {
     display: block;
     padding: 10px;
     font-size: 3em;
-    z-index: 1000px; 
+    z-index: 1; 
 }
 
 .footer {
