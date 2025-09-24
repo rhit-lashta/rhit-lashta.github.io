@@ -23,8 +23,11 @@ mark {
 }
 
 .navBar {
-    position: fixed;
-    margin-left: 0px;
+
+    position: fixed; 
+    top: 0;         
+    left: 0;         
+
     text-align: center;
     word-spacing: 5.0em;
 
