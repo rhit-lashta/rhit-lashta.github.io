@@ -35,9 +35,10 @@ mark {
 }
 
 .footer {
+    margin-left: 0px;
     text-align: center;
-    justify-content: space-evenly;
-    word-spacing: 0.5em;
+    word-spacing: 5.0em;
+
 
     Color: black;
     background-color: rgb(180, 230, 255);
