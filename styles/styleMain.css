@@ -25,6 +25,8 @@ mark {
 
     Color: black;
     background-color: rgb(180, 230, 255);
+    justify-content: space-evenly;
+    width: 100%;
 
     display: block;
     padding: 10px;
