@@ -99,12 +99,15 @@ img {
 }
 
 .portfolioText {
-    style: inline-block;
+    display: inline-block;
 }
 
 .portfolioPic {
-    style: block;
+    display: block;
     align-items:right;
+    width: 40%;
+    height: 50%;
+
 }
 
 /* 
