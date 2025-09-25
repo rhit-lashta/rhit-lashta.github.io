@@ -95,7 +95,7 @@ img {
     padding: 10px
 }
 
-portfolioSlot:nth-child(2n) {
+.portfolioSlot:nth-child(2n) {
     background-color: lightblue;
   }
 
