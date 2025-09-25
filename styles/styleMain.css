@@ -1,6 +1,7 @@
 :root {
     --linkBlue: #000284;
     --hoverColor: #ffff00;
+    --headerColor: #9ad5ff;
 
 }
 
@@ -42,7 +43,7 @@ img {
     word-spacing: 5.0em;
 
     Color: var(--linkBlue);
-    background-color: rgb(180, 230, 255);
+    background-color: var(--headerColor);
     width: 100%;
     height: 15%;
 
@@ -62,7 +63,9 @@ img {
 
     Color: var(--linkBlue);
 
+    background-color: var(--headerColor);
     width: 100%;
+    height: 15%;
 
     display: block;
     padding: 10px;
