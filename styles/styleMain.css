@@ -2,20 +2,18 @@
     --linkBlue: #000284;
     --hoverColor: #d4d400;
     --headerColor: #9ad5ff;
-
 }
 
 body{
     margin-left: 0px;
 }
 
-div{
-    margin-left: 0px;
-    margin-bottom: 0px;
-}
-
 p {
     margin-left: 8px;
+}
+
+h1 {
+    text-align: center;
 }
 
 
