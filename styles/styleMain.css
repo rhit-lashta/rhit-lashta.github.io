@@ -50,6 +50,10 @@ img {
     z-index: 1; 
 }
 
+.spacer {
+    height: 15%;
+}
+
 .footer {
     margin-left: 0px;
     text-align: center;
