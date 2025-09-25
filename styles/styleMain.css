@@ -1,5 +1,6 @@
 :root {
-    --linkBlue: #00013d;
+    --linkBlue: #000284;
+    --hoverColor: #ffff00;
 
 }
 
@@ -15,7 +16,7 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: var(--hoverColor);
     border-style: dashed;
 }
 
