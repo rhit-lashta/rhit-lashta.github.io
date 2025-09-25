@@ -14,6 +14,10 @@ div{
     margin-bottom: 0px;
 }
 
+p {
+    margin-left: 8px;
+}
+
 
 a { 
     color: var(--linkBlue);
