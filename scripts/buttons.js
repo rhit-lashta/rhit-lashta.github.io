@@ -1,4 +1,33 @@
 
+let dropBtn1 = document.getElementById("drop1");
+let drop1 = document.getElementById("hide1");
+
+let dropBtn2 = document.getElementById("drop2");
+let drop2 = document.getElementById("hide2");
+
+dropBtn1.addEventListener("click", function() {
+    toggleHide(hide1)
+});
+
+dropBtn2.addEventListener("click", function() {
+    toggleHide(hide2)
+});
+
+
+function toggleHide(hide) {
+   
+    if (hide.hasAttribute("hidden")) {
+        hide.removeAttribute("hidden")
+    }
+    else {
+        hide.addAttribute("hidden")
+    }
+ 
+ }
+
+
+
+
 /*
 let favCount = document.getElementById("favorite_number");
 
