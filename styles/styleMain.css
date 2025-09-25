@@ -28,7 +28,7 @@ a:hover {
     */
 
 img {
-    text-align: center;
+    align-items: center;
 }
 
 /* Heading Help - https://stackoverflow.com/questions/48535332/how-to-make-it-so-my-form-stays-under-my-header-unless-i-need-to-scroll */
