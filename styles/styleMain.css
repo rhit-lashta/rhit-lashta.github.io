@@ -1,5 +1,6 @@
 :root {
     --linkBlue: #00013d;
+
 }
 
 body{
@@ -22,9 +23,8 @@ a:hover {
     margin-left: 0px;
 }
 
-
-mark {
-    color: yellowgreen;
+img {
+    text-align: center;
 }
 
 /* Heading Help - https://stackoverflow.com/questions/48535332/how-to-make-it-so-my-form-stays-under-my-header-unless-i-need-to-scroll */
@@ -37,7 +37,6 @@ mark {
 
     text-align: center;
     word-spacing: 5.0em;
-
 
     Color: var(--linkBlue);
     background-color: rgb(180, 230, 255);
