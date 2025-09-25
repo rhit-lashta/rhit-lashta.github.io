@@ -16,12 +16,8 @@ dropBtn2.addEventListener("click", function() {
 
 function toggleHide(hide) {
    
-    if (hide.hasAttribute("hidden")) {
-        hide.removeAttribute("hidden")
-    }
-    else {
-        hide.addAttribute("hidden")
-    }
+    hide.hidden = false;
+
  
  }
 
