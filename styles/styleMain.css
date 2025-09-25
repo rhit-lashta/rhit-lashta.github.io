@@ -1,3 +1,7 @@
+:root {
+    --linkBlue: #00013d;
+}
+
 body{
     margin-left: 0px;
 }
@@ -33,7 +37,7 @@ mark {
     word-spacing: 5.0em;
 
 
-    Color: black;
+    Color: var(--linkBlue);
     background-color: rgb(180, 230, 255);
     width: 100%;
 
@@ -48,9 +52,8 @@ mark {
     text-align: center;
     word-spacing: 5.0em;
 
+    Color: var(--linkBlue);
 
-    Color: black;
-    background-color: rgb(180, 230, 255);
     width: 100%;
 
     display: block;
@@ -69,13 +72,6 @@ mark {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
     z-index: 1000; 
 }
-
-
-
-:root {
-    --rose-hulman-red: #800000;
-}
-
 
 
 body{
