@@ -80,11 +80,8 @@ img {
     font-size: 3em;
 }
 
-.PortfolioSlot {
-    background-color: #dddddd;
-    color: black;
-    width: 30%;
-    float: left;
+.portfolioSlot {
+   
 }
 
 #portfolioPic {
