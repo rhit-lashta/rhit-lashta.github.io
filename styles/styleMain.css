@@ -99,7 +99,7 @@ img {
 }
 
 .portfolioSlot:nth-child(2n) {
-    background-color: lightblue;
+    background-color: var(--portfolioColor);
   }
 
 .portfolioText {
