@@ -16,7 +16,7 @@ dropBtn2.addEventListener("click", function() {
 
 function toggleHide(hide) {
    
-    hide.hidden = false;
+    hide.hidden = !hide.hidden;
 
  
  }
