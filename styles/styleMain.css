@@ -6,7 +6,7 @@
 }
 
 body{
-    text-align: center;
+    text-align: left;
     margin-left: 0px;
 }
 
@@ -23,12 +23,15 @@ a {
     color: var(--linkBlue);
     text-decoration: none;
     border-style: none;
-    padding: 10px;
 }
 
 a:hover {
     color: var(--hoverColor);
     border-style: dashed;
+}
+
+#addPadding{
+    padding: 10px;
 }
 
 
@@ -92,7 +95,7 @@ img {
 }
 
 .portfolioText {
-    style: in
+    style: inline-block;
 }
 
 .portfolioPic {
