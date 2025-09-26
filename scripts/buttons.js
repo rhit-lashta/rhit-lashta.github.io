@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Fetch Code Source - https://www.w3schools.com/js/js_api_fetch.asp - This was probaly not the right way to make a footer and banner but I am tired and nothing else worked//
 
 async function setupNavBar() {
@@ -14,36 +13,9 @@ async function setupFooter() {
     document.getElementById("footer").innerHTML = myText
 }
 
-setupNavBar()
-setupFooter()
+setupNavBar();
+setupFooter();
 
-=======
-// Fetch Code Source - https://www.w3schools.com/js/js_api_fetch.asp //
-
-// This adds the navagation bar to an html if and element has the id "navbar"
-fetch("navTop.html")
-    .then(response => response.text())
-    .then(data => {
-    document.getElementById("navbar").innerHTML = data;
-    setUpDarkMode();
-});
-
-// This adds the footer bar to an html if and element has the id "footer"
-fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-    document.getElementById("footer").innerHTML = data;
-});
->>>>>>> e225454e5e969f778ea0a41e17740f074c51c076
-
-let dropBtns = document.querySelectorAll("#drop");
-let hideObjs = document.querySelectorAll("#hide");
-for (let i = 0; i < dropBtns.length; i++) {
-
-    dropBtns[i].addEventListener("click", function() {
-        toggleHide(hideObjs[i]);
-    });
-}
 
 let dropBtns = document.querySelectorAll("#drop");
 let hideObjs = document.querySelectorAll("#hide");
@@ -79,10 +51,3 @@ function toggleDarkMode() {
     }
     
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> e225454e5e969f778ea0a41e17740f074c51c076
-
-
- 
