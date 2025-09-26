@@ -162,6 +162,8 @@ img {
     
 }
 
+/* Found CSS math functions here - https://www.w3schools.com/css/css_math_functions.asp */
+
 .portfolioPic {
     position: absolute;
     display: block;
@@ -171,3 +173,7 @@ img {
 
     pointer-events: none;
 }
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> e225454e5e969f778ea0a41e17740f074c51c076
