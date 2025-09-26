@@ -1,12 +1,43 @@
 :root {
-    --linkBlue: #000284;
-    --hoverColor: #d4d400;
+    --mainTextColor: black;
+    --link: #0003ab;
+    --vistedLink: #410139;
+    --hoverColor: #424200;
     --headerColor: #9ad5ff;
     --portfolioColor: #e3e3e3;
+    --portfolioTextBack: lightblue;
+
+    --navBarHeight: 50px;
+    --navBarPadding: 20px;
+
+    --portfolioHeight: 450px;
+    --portfolioPadding: 15px;
+    --portfolioTextboxWidth: 400px;
+}
+
+
+.darkMode {
+    color: white;
+    background-color: black;
+
+    --mainTextColor: white;
+    --link: #86D2FD;
+    --vistedLink: #FFADF4;
+    --hoverColor: #ffff00;
+    --headerColor: #003761;
+    --portfolioColor: #272727;
+    --portfolioTextBack: #373737;
+}
+
+#darkBtn{
+    margin-left: 8px;
+    margin-top: 8px;
 }
 
 body{
     margin-left: 0px;
+    color: black;
+    background-color: white;
 }
 
 p {
@@ -17,11 +48,23 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    margin-left: 8px;
+}
+
+h3 {
+    margin-left: 8px;
+}
+
 
 a { 
-    color: var(--linkBlue);
-    text-decoration: none;
+    color: var(--link);
     border-style: none;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--vistedLink);
 }
 
 a:hover {
@@ -29,9 +72,11 @@ a:hover {
     border-style: dashed;
 }
 
+
 #addPadding{
     padding: 10px;
 }
+
 
 #center{
     text-align: center;
@@ -40,8 +85,8 @@ a:hover {
 
 
 img {
-    margin: 8px, 8px;
     align-items: center;
+    margin-bottom: 30px; 
 }
 
 /* Heading Help - https://stackoverflow.com/questions/48535332/how-to-make-it-so-my-form-stays-under-my-header-unless-i-need-to-scroll */
@@ -50,43 +95,45 @@ img {
 
     position: fixed; 
     top: 0;         
-    left: 0;         
+    left: 0;     
+    white-space: nowrap;    
 
-    text-align: center;
-    word-spacing: 5.0em;
+    text-align: left;
 
     Color: var(--linkBlue);
     background-color: var(--headerColor);
     width: 100%;
-    height: 15%;
+    height: var(--navBarHeight);
+    padding: var(--navBarPadding);
 
-    margin-left: 0px;
     display: block;
     font-size: 3em;
     z-index: 1; 
 }
 
+/* Found CSS math functions here - https://www.w3schools.com/css/css_math_functions.asp */
+
 .spacer {
-    height: 15%;
+    margin: calc(var(--navBarHeight) + 2 * var(--navBarPadding));
+    visibility: hidden;
 }
 
 .footer {
     margin-left: 0px;
     margin-bottom: 0px;
+    white-space: nowrap;   
 
-    text-align: center;
-    word-spacing: 5.0em;
+    text-align: left;
 
     Color: var(--linkBlue);
 
     background-color: var(--headerColor);
     width: 100%;
-    height: 15%;
+    height: 40px;
+    padding-top: 10px;
 
-    
     display: block;
-    padding: 10px;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 /* Porfolio Classes */
@@ -94,129 +141,33 @@ img {
 .portfolioSlot {
     display: inline-block;
     width: 100%;
-    height: 70%;
+    height: var(--portfolioHeight);
     padding: 10px;
 }
 
 .portfolioSlot:nth-child(2n) {
     background-color: var(--portfolioColor);
+    color: var(--mainTextColor);
   }
 
 .portfolioText {
     
     display: inline-block;
-    width: 50%;
-    height: 60%;
-    padding: 5%;
-    color: black;
-    background-color: lightblue;
-
+    size: 24px;
+    width: var(--portfolioTextboxWidth);
+    height: 200px;
+    padding: 1%;
+    color: var(--mainTextColor);
+    background-color: var(--portfolioTextBack);
+    
 }
 
 .portfolioPic {
+    position: absolute;
     display: block;
-    text-align: right;
-    width: 40%;
-    height: 50%;
-
-}
-
-/* 
-.sticky-banner {
-    position: fixed;
-    top: 0; 
-    width: 100%; 
-    background-color: #f0f0f0;
-    padding: 10px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-    z-index: 1000; 
-}
+    margin-left: var(--portfolioTextboxWidth);
+    width: 1000px;
 
-
-body{
-    color: black;
-    font-family: Arial;
-    font-size: 12px;
-    font-weight: normal;
+    pointer-events: none;
 }
-
-p {
-    text-align: center
-}
-
-button {
-    font-size: 24px;
-    color: white;
-
-    padding: 18px 24px 18px;
-
-    display: inline-block;
-    background-color: var(--rose-hulman-red);
-    border-style: none;
-}
-
-
-#blue-btn{
-    background-color: blue;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-#green-btn{
-    background-color: green;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-#red-btn{
-    background-color: red;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-#purple-btn{
-    background-color: purple;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-#redBar {   
-    color: white;
-    background-color: var(--rose-hulman-red);
-    display: block;
-    padding: 10px;
-}
-
-#favorite_number {
-    font-size: 60px;
-    line-height: 250%;
-}
-
-.colorBox {
-    
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    line-height: 700%;
-
-    display: inline-block;
-    width: 200px;
-    height: 100px;
-    background-color: var(--rose-hulman-red);
-
-    margin-top: 40px;
-    margin-bottom: 15px;
-}
-
-
-.blueBox {
-    background-color: blue;
-}
-.greenBox{
-    background-color: green;
-}
-.redBox{
-    background-color: red;
-}
-.purpleBox{
-    background-color: purple;
-}
-    */
