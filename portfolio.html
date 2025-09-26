@@ -4,57 +4,96 @@
         <meta charset="utf-8">
 
         <link rel="stylesheet" href="./styles/styleMain.css">
-        
         <script src="./scripts/buttons.js" defer></script>
-        <script src="./scripts/loadHeaders.js" defer></script>
 
 
 	</head>
 <body>
 
-    <p>
+    <header role="banner">
         <div id="navbar"></div>
-    </p>
+    </header>
+    <div id="darkMode">
+    
 
     <h1>Portfolio</h1>
 
+    <main role="main">
     <h2>Projects</h2>
 
     <div class="portfolioSlot">
-        <h3><a href="https://github.com/rhit-csse220/csse220-fall-2024-2025-final-project-f24_a301#" id="addPadding">Duck Celeste Game</a></h3>
-        <p> Developed in <a href="https://github.com/rhit-csse220/csse220-fall-2024-2025-final-project-f24_a301#">Eclipse</a>: 2024</p>
-        <h4>Description<h4>
-        <div class="portfolioText">
-            <p>This was a project developed in my CSSE-220 class at Rose-Hulman and it was a group project between 2 other partners. It took place over 3 weeks and we had the choice to make one of two different types of game in Eclipse. We chose the harder of the two which was to make a clone of the game Celeste. The game was programmed using Java primarily focusing on parent classes and  inheritance to get the game to run.</p>
-        </div>
 
         <div class="portfolioPic">
-            <img alt="A title screen with a duck standing in front" src="./images/DuckGame.png" id = #portfolioPic/>
+            <img alt="A title screen with a duck standing in front" src="./images/DuckGame.png" width = 700px height = 450px>
         </div>
-    </div>
 
-    <!--
+        <h3><a href="https://github.com/rhit-csse220/csse220-fall-2024-2025-final-project-f24_a301#" id="addPadding">Duck Celeste Game</a></h3>
+        <p> Developed in <a href="https://github.com/rhit-csse220/csse220-fall-2024-2025-final-project-f24_a301#">Eclipse</a>: 2024</p>
 
-    <div class="portfolioSlot">
-    <h3> <a href="https://tyranic1.itch.io/scary-monster-2">Scary Monsters 2</a>: 2023</h3>
+        <h4>Description<h4>
 
-        <img alt="A video game with a man standing in a dark room" src="./images/ScaryMonsters2.png" id = #portfolioPic/>
-    </div>
+        <div class="portfolioText"> 
+            This was a project developed in my CSSE-220 class at Rose-Hulman and it was a group project between 2 other partners. It took place over 3 weeks and we had the choice to make one of two different types of game in Eclipse. We chose the harder of the two which was to make a clone of the game Celeste. The game was programmed using Java primarily focusing on parent classes and  inheritance to get the game to run.
+        </div>
 
-    <div class="portfolioSlot">
-    <h3> <a href="https://tyranic1.itch.io/b4-scary-monsters">Scary Monsters 4</a>: 2024</h3>
-        <img alt="The title screen or Scary Monsters 4 which has a shoot looking down a rainy ally" src="./images/ScaryMonsters4.png" id = #portfolioPic/>
     </div>
 
     <div class="portfolioSlot">
-    <h3> <a href="https://bo-de.itch.io/dairy-boy">Dairy Boy</a>: 2024</h3>
-        <img alt="The title sceen for the game dairy boy" src="./images/DairyBoy.png" id = #portfolioPic/>
+
+        <div class="portfolioPic">
+            <img alt="A video game with a man standing in a dark room" src="./images/ScaryMonsters2.png" width = 700px height = 450px>
+        </div>
+
+        <h3><a href="https://tyranic1.itch.io/scary-monster-2" id="addPadding">Scary Monsters 2</a></h3>
+        <p> Developed in <a href="https://unity.com/">Unity</a>: 2023</p>
+
+        <h4>Description<h4>
+
+        <div class="portfolioText"> 
+            This was a personal project I made alone in Unity. It is a short ten minute game I made in a month for my brother as a joke. The game involves walking around a recreation of a real life house. It is programmed in C# and this was the first decently large scale project I managed to finish in unity.
+        </div>
+
     </div>
 
-    -->
+    <div class="portfolioSlot">
 
-    <div id="footer"></div>
-    
+        <div class="portfolioPic">
+            <img alt="The title screen or Scary Monsters 4 which has a shoot looking down a rainy ally" src="./images/ScaryMonsters4.png" width = 700px height = 450px>
+        </div>
+
+        <h3><a href=https://tyranic1.itch.io/b4-scary-monsters id="addPadding">Scary Monsters 4</a></h3>
+        <p> Developed in <a href="https://unity.com/">Unity</a>: 2024</p>
+
+        <h4>Description<h4>
+
+        <div class="portfolioText"> 
+            This was another personal project I made alone in Unity. This is similar to the last Scary Monsters game I made but this one is an hour long and I spent 4 months working on it. It mostly develops on the last game with more time being spent on the in-game AI and in-game systems. I also modeled all of the assets in the game in blender.
+        </div>
+
+    </div>
+
+    <div class="portfolioSlot">
+
+        <div class="portfolioPic">
+            <img alt="The title sceen for the game dairy boy" src="./images/DairyBoy.png" width = 450px height = 450px>
+        </div>
+
+        <h3><a href="https://bo-de.itch.io/dairy-boy" id="addPadding">Dairy Boy</a></h3>
+        <p> Developed in <a href="https://unity.com/">Unity</a>: 2024</p>
+
+        <h4>Description<h4>
+
+        <div class="portfolioText"> 
+            This was a collaborative project between me and my brother for a <a href="https://bo-de.itch.io/dairy-boy/">game jam</a>. We made it in Unity and we completed the project in the span of 3 days. I made most of the visual assets and a decent portion of the C# code while my brother made the rest. The game itself is a short 5 to 10 minute high-score survival game where you move around and throw bombs at flies.
+        </div>
+
+    </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div id="footer"></div>
+    </footer>
+    </div>
 
 </body>
 </html>

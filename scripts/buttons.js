@@ -1,93 +1,55 @@
+// Fetch Code Source - https://www.w3schools.com/js/js_api_fetch.asp - This was probaly not the right way to make a footer and banner but I am tired and nothing else worked//
 
-let dropBtn1 = document.getElementById("drop1");
-let drop1 = document.getElementById("hide1");
+async function setupNavBar() {
+    let myObject = await fetch("navTop.html");
+    let myText = await myObject.text();
+    document.getElementById("navbar").innerHTML = myText
+    setUpDarkMode();
+}
 
-let dropBtn2 = document.getElementById("drop2");
-let drop2 = document.getElementById("hide2");
+async function setupFooter() {
+    let myObject = await fetch("footer.html");
+    let myText = await myObject.text();
+    document.getElementById("footer").innerHTML = myText
+}
 
-dropBtn1.addEventListener("click", function() {
-    toggleHide(hide1)
-});
+setupNavBar()
+setupFooter()
 
-dropBtn2.addEventListener("click", function() {
-    toggleHide(hide2)
-});
 
+let dropBtns = document.querySelectorAll("#drop");
+let hideObjs = document.querySelectorAll("#hide");
+for (let i = 0; i < dropBtns.length; i++) {
+
+    dropBtns[i].addEventListener("click", function() {
+        toggleHide(hideObjs[i]);
+    });
+}
 
 function toggleHide(hide) {
    
     hide.hidden = !hide.hidden;
-
- 
- }
-
-
-
-
-/*
-let favCount = document.getElementById("favorite_number");
-
-let plusBtn = document.getElementById("plus-btn");
-plusBtn.addEventListener("click", function() {
-    incrementCount(1);
-});
-         
-let minusBtn = document.getElementById("minus-btn");
-minusBtn.addEventListener("click", function() {
-    incrementCount(-1);
-});
-
-let resetBtn = document.getElementById("reset-btn");
-resetBtn.addEventListener("click", function() {
-    resetCount();
-});  
-
-function incrementCount(amount) {
-    let count = parseInt(favCount.innerHTML);
-    count += amount;
-    favCount.innerHTML = count;
 }
 
-function resetCount() {
-    favCount.innerHTML ="0";
+// For dark mode, I did not have one specific inspirtation because it is so common but I just going to say https://www.google.com/ //
+
+function setUpDarkMode() {
+    darkBtns = document.querySelectorAll("#darkBtn");
+    darkModes = document.querySelectorAll("#darkMode");
+    for (let i = 0; i < darkBtns.length; i++) {
+
+        darkBtns[i].addEventListener("click", function() {
+            toggleDarkMode();
+        });
+    }
 }
 
-
-let colorBox = document.getElementById("favoriteBox");
-let currentColor;
-
-let blueBtn = document.getElementById("blue-btn");
-blueBtn.addEventListener("click", function() {
-    setBoxColor("blue");
-});
-         
-let greenBtn = document.getElementById("green-btn");
-greenBtn.addEventListener("click", function() {
-    setBoxColor("green");
-});
-
-let redBtn = document.getElementById("red-btn");
-redBtn.addEventListener("click", function() {
-    setBoxColor("red");
-});  
-
-let purpleBtn = document.getElementById("purple-btn");
-purpleBtn.addEventListener("click", function() {
-    setBoxColor("purple");
-});
-
-// classList color change help Source: https://developer.mozilla.org/en-US/docs/Web/API/Element/classList //
-function setBoxColor(color) {
-    let boxName = color + "Box" 
-    if (boxName != currentColor)
-    {
-        colorBox.innerHTML = color;
-        colorBox.classList.toggle(currentColor);
-        currentColor = boxName;
-        colorBox.classList.toggle(boxName);
+function toggleDarkMode() {
+    
+    for (let i = 0; i < darkModes.length; i++) {
+        darkModes[i].classList.toggle("darkMode");
     }
     
-
 }
-*/
+
 
